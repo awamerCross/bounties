@@ -16,7 +16,6 @@ import {
     Input,
 } from 'native-base'
 import styles from '../../assets/style'
-import {DoubleBounce} from 'react-native-loader';
 import {connect} from "react-redux";
 import {NavigationEvents} from "react-navigation";
 import i18n from "../../locale/i18n";

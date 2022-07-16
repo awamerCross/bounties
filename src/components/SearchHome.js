@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import {View, Text, Image, TouchableOpacity, ImageBackground, FlatList , Platform, I18nManager} from "react-native";
+import {View, Text, Image, TouchableOpacity, ImageBackground, FlatList , Platform, I18nManager, ActivityIndicator} from "react-native";
 import {Container, Content, Header, Button, Left, Body, Title, Icon,} from 'native-base'
 import styles from '../../assets/style'
-import { DoubleBounce } from 'react-native-loader';
 import {connect} from "react-redux";
 import {NavigationEvents} from "react-navigation";
 import { searchHome } from '../actions';
 import i18n from "../../locale/i18n";
 import ProductBlock from './ProductBlock'
+import COLORS from "../consts/colors";
 
 const isIOS = Platform.OS === 'ios';
 
@@ -45,7 +45,7 @@ class SearchHome extends Component {
         if (this.props.loader){
             return(
                 <View style={[styles.loading, styles.flexCenter]}>
-                    <DoubleBounce size={20} />
+                    <ActivityIndicator size="large" color={COLORS.blue} style={{ alignSelf: 'center' }} />
                 </View>
             );
         }

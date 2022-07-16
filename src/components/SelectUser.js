@@ -13,7 +13,6 @@ import {
 import {Container, Content, Form, Item, Input, Button, Toast, Icon,} from 'native-base'
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
-import {DoubleBounce} from "react-native-loader";
 import {NavigationEvents} from "react-navigation";
 import * as Animatable from 'react-native-animatable';
 import {connect} from 'react-redux';

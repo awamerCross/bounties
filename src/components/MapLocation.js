@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import {View, Text, Image, TouchableOpacity, I18nManager} from "react-native";
+import {View, Text, Image, TouchableOpacity, I18nManager, ActivityIndicator} from "react-native";
 import {Container, Content, Header, Button, Left, Icon, Body, Title,Toast} from 'native-base'
 import styles from '../../assets/style'
-import { DoubleBounce } from 'react-native-loader';
 import {connect} from "react-redux";
 import i18n from "../../locale/i18n";
 import * as Permissions from 'expo-permissions';
@@ -10,6 +9,7 @@ import * as Location from 'expo-location';
 import axios from "axios";
 import MapView from 'react-native-maps';
 import CONST from "../consts";
+import COLORS from "../consts/colors";
 
 class MapLocation extends Component {
     constructor(props){
@@ -230,7 +230,7 @@ class MapLocation extends Component {
         if (this.props.loader){
             return(
                 <View style={[styles.loading, styles.flexCenter]}>
-                    <DoubleBounce size={20} />
+                    <ActivityIndicator size="large" color={COLORS.blue} style={{ alignSelf: 'center' }} />
                 </View>
             );
         }

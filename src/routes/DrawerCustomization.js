@@ -134,6 +134,7 @@ class DrawerCustomization extends Component {
                             <Icon  name='translate' type='MaterialIcons' style={{ color: '#768186' }} />
                             <Text style={[styles.textRegular, styles.textSize_16, { marginLeft: 15 }]}>{ I18nManager.isRTL ? 'English' : 'العربية' }</Text>
                         </TouchableOpacity>
+                        <Image source={require('../../assets/images/mada-logo.png')} resizeMode={'contain'} style={{ width: 100, height: 70, alignSelf: 'center', margin: 50 }} />
                     </View>
 
                 </Content>

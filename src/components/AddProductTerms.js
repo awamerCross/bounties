@@ -4,7 +4,6 @@ import {Container, Content, Icon, Header, Left, Button, Body, Title, Form} from 
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
 import {connect} from "react-redux";
-import {DoubleBounce} from "react-native-loader";
 import { getAddProductTerms } from '../actions'
 import * as Animatable from 'react-native-animatable';
 import axios from "axios";

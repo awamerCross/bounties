@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {View, Text, Image, TouchableOpacity, ImageBackground, Linking, Animated, Dimensions, I18nManager} from "react-native";
 import {Container, Content, Header, Button, Left, Icon, Body, Title, Right} from 'native-base'
 import styles from '../../assets/style'
-import {DoubleBounce} from 'react-native-loader';
 import {connect} from "react-redux";
 import {getCartList} from '../actions'
 import {NavigationEvents} from "react-navigation";

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import {View, Text, Image, ImageBackground, TouchableOpacity, I18nManager} from "react-native";
+import {View, Text, Image, ImageBackground, TouchableOpacity, I18nManager, ActivityIndicator} from "react-native";
 import {Container, Content, Icon, Header, Left, Button, Body, Title, Form} from 'native-base'
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
 import {connect} from "react-redux";
-import {DoubleBounce} from "react-native-loader";
 import * as Animatable from 'react-native-animatable';
 import { getLoginPackage } from '../actions'
+import COLORS from "../consts/colors";
 
 class Subscription extends Component {
     constructor(props){
@@ -25,7 +25,7 @@ class Subscription extends Component {
         if (this.props.loader){
             return(
                 <View style={[styles.loading, styles.flexCenter]}>
-                    <DoubleBounce size={20} />
+                    <ActivityIndicator size="large" color={COLORS.blue} style={{ alignSelf: 'center' }} />
                 </View>
             );
         }

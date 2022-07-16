@@ -18,7 +18,6 @@ import { connect } from 'react-redux';
 import { activeCode,resendCode, profile, userLogin } from "../actions";
 import Spinner from "react-native-loading-spinner-overlay";
 import activationCode from "../reducers/ActivationCodeReducer";
-import {DoubleBounce} from "react-native-loader";
 import COLORS from "../consts/colors";
 
 

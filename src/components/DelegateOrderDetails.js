@@ -14,7 +14,6 @@ import {
 import {Container, Content, Icon, Header, Left, Button, Body, Title, Right, Textarea} from 'native-base'
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
-import {DoubleBounce} from "react-native-loader";
 import * as Animatable from 'react-native-animatable';
 import {connect} from "react-redux";
 import COLORS from '../../src/consts/colors'

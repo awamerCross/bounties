@@ -11,7 +11,6 @@ import {
 } from "react-native";
 import {Container, Content, Header, Button, Left, Icon, Body, Title, Right, Textarea} from 'native-base'
 import styles from '../../assets/style'
-import {DoubleBounce} from 'react-native-loader';
 import {connect} from "react-redux";
 import {NavigationEvents} from "react-navigation";
 import * as Animatable from 'react-native-animatable';

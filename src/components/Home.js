@@ -86,7 +86,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        Notifications.addListener(this.handleNotification);
+        // Notifications.addListener(this.handleNotification);
     }
 
     onSubCategories ( id ){

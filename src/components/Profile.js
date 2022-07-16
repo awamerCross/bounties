@@ -3,7 +3,6 @@ import {View, Text, Image, ImageBackground, TouchableOpacity, ActivityIndicator,
 import {Container, Content, Icon, Header, Left, Button, Body, Title, Form, Item, Input, Right , Toast} from 'native-base'
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
-import {DoubleBounce} from "react-native-loader";
 import * as Animatable from 'react-native-animatable';
 import {connect} from "react-redux";
 import COLORS from '../../src/consts/colors'

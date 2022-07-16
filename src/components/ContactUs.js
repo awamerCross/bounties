@@ -14,7 +14,6 @@ import {Container, Content, Icon, Header, Left, Button, Body, Title, Item, Texta
 import styles from '../../assets/style'
 import i18n from '../../locale/i18n'
 import {connect} from "react-redux";
-import {DoubleBounce} from "react-native-loader";
 import { getContactUs, complaint } from '../actions';
 import  Modal  from "react-native-modal";
 import * as Animatable from 'react-native-animatable';
